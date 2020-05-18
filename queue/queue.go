@@ -36,3 +36,8 @@ func (s *Queue) Empty() bool {
 	}
 	return false
 }
+
+//Front ...
+func (s *Queue) Front() interface{} {
+	return s.list.Front().Value
+}
